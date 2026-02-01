@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #CBE6EF;
+    background-color: #a2dff3;
 }
 
 /* Position the "No" button absolutely within body */
@@ -24,7 +24,7 @@ body {
     font-family: 'Nunito';
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: rgb(228, 95, 95);
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0;
@@ -42,7 +42,7 @@ body {
 
 .btn {
     background-color: #80c3d8;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
@@ -62,5 +62,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: fall 7s linear infinite;
+}
+
+@keyframes fall {
+    -10% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
 }
 
