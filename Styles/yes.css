@@ -76,7 +76,7 @@ body {
 
 .heart {
     position: absolute;
-    color: red;
+    color: rgba(255, 0, 0, 0.5);
     font-size: 20px;
     animation: fall 7s linear infinite;
 }
